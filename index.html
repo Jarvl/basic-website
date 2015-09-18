@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>My Project</title>
+        <style>
+            .myDiv {
+                color: skyblue;
+                text-align: center;
+                width: 200px;
+                height: 200px;
+                background-color: firebrick;
+                border-radius: 10px;
+                border: 2px solid black;
+                margin: 10px;
+                padding: 10px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            .myDiv > p:first-child {
+                font-weight: bold;
+            }
+
+            .myDiv > p:last-child {
+                font-style: italic;
+                color: whitesmoke;
+            }
+            
+            #myButton {
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+            <div class="myDiv">
+                <p>Some text for our page.</p>
+                <p>Some more text for our page.</p>
+            </div>
+        </div>
+        <button id="disappearButton" onclick="toggleBoxes()">Toggle Boxes</button>
+        
+        <script>
+            function toggleBoxes() {
+                var classArray = document.getElementsByClassName("myDiv");
+                
+                for (var i = 0; i < classArray.length; i++) {
+                    if (classArray[i].style.display == "none") {
+                        classArray[i].style.display = "inline-block";
+                    }
+                    else {
+                        classArray[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
